@@ -2,7 +2,7 @@
 
 'Awesome Text Editor' is a simple and intuitive text editor built with HTML, CSS, and JavaScript. It allows you to write, format, and style your text easily. Whether you're a developer, writer, or student, this text editor provides a seamless experience for all your writing needs.
 
-## Features ✨
+## Features
 
 - **Font Size:** Adjust the font size of your text to make it comfortable to read.
 - **Emphasized Text:** Make your text bold, italic, or underline with a single click.
@@ -11,7 +11,7 @@
 - **Text Color:** Pick your favorite color to make your text visually appealing.
 - **Dark/Light Mode:** Switch between dark and light mode for comfortable writing in any environment.
 
-## How to Use 📝
+## How to Use 
 
 1. **Font Size:**
    - Use the number input field labeled **"Font Size"** to set the desired font size.
