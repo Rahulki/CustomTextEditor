@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rahul Mulubhai Odedara">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    >
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div id="darkMode" class="darkMode">
+        <button  onclick="darkMode(this)">
+          Dark Mode
+        </button>
+      </div>
+      <div class="headerMenu">
+        <div class="fontSize box">
+          <label for="fontSize"></label>
+          <input
+            type="number"
+            name="fontSize"
+            id="fontSize"
+            value="16"
+            min="10"
+            max="100"
+            onchange="fontSizeChange(this)"
+            >
+          </div>
+          <div class="emphasizedText box">
+            <button onclick="fontBold(this)">
+              <i class="fa-solid fa-bold"></i>
+            </button>
+            
+            <button onclick="fontItalic(this)">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+
+            <button onclick="fontUnderline(this)">
+            <i class="fa-solid fa-underline"></i>
+            </button>
+        </div>
+        <div class="textAlign box">
+          <button id="alignLeft" onclick="alignLeft(this)">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+          <button id="alignCenter" onclick="alignCenter(this)">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+          <button id="alignRight" onclick="alignRight(this)">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+        </div>
+        <div class="fontColor box">
+          <select name="fontFamily" id="fontFamily" onchange="changeFontFamily(this)">
+            <option value="sans-serif">sans-serif</option>
+            <option value="fantasy">fantasy</option>
+            <option value="cursive">cursive</option>
+          </select>
+          <button onclick="fontUpperCase(this)">Aa</button>
+          <input type="color" name="colorChooser" id="colorChooser" onchange="fontColorChange(this)">
+        </div>
+      </div>
+      <div >
+        <textarea class="lighTextArea" name="textArea" id="textArea" cols="30" rows="10" placeholder="Your text here"></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
